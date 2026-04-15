@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Umer — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div id="bg-wrap">
+  </div>
+
+  <!-- Splash -->
+  <div id="splash">
+    <div class="splash-inner">
+      <div class="splash-avatar-wrap">
+        <div class="splash-ring-glow"></div>
+        <div class="splash-ring"></div>
+        <div class="splash-avatar">
+          <img src="splash_image.jpeg" alt="Umer">
+        </div>
+      </div>
+      <div class="splash-name">Umer</div>
+      <div class="splash-sub">UI/UX Designer</div>
+      <div class="splash-loader">
+        <div class="splash-dot"></div>
+        <div class="splash-dot"></div>
+        <div class="splash-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app">
+
+    <!-- Swiper Tabs -->
+    <div class="swiper-container" id="swiperContainer">
+      <div class="swiper-wrapper-custom" id="swiperWrapper">
+
+        <!-- HOME -->
+        <div class="tab-slide" id="tab-home">
+          <section class="hero">
+            <div style="position:relative;display:inline-block">
+              <div class="hero-avatar-ring"></div>
+              <div class="hero-avatar">
+                <img src="profile_image.png" alt="Umer">
+              </div>
+            </div>
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              Available for work
+            </div>
+            <div class="hero-name">Umer</div>
+            <div class="hero-title">UI/UX Designer</div>
+            <div class="hero-tagline">Crafting digital experiences that feel as beautiful as they look.</div>
+            <div class="hero-cards">
+              <div class="hero-stat-row">
+                <div class="stat-card">
+                  <div class="stat-num">5+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-num">40+</div>
+                  <div class="stat-label">Projects Done</div>
+                </div>
+              </div>
+              <div class="hero-stat-row">
+                <div class="stat-card">
+                  <div class="stat-num">28</div>
+                  <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-num">12</div>
+                  <div class="stat-label">Awards Won</div>
+                </div>
+              </div>
+              <!--<div class="cta-card" onclick="switchTab(2)">
+                <span>View my work →</span>
+                <div class="cta-arrow">✦</div>
+              </div>-->
+            </div>
+            <!-- <div class="scroll-hint">
+              <span>scroll</span>
+              <div class="scroll-hint-line"></div>
+            </div> -->
+          </section>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="tab-slide" id="tab-about">
+          <div class="about-hero">
+            <div class="about-name">Umer</div>
+            <div class="about-role">UI/UX Designer · Product Thinker</div>
+          </div>
+
+          <div style="padding:0 4px">
+            <div class="about-section">
+              <div class="section-label">About Me</div>
+              <div class="bio-card">
+                <p>Hi, I'm Umer — a UI/UX designer based in Lahore with 5+ years of experience crafting digital
+                  experiences for startups, SaaS products, and consumer apps.</p>
+                <p>I blend aesthetic precision with deep user empathy to build interfaces that are not just beautiful —
+                  but intuitive and conversion-focused. From wireframe to final pixel, every decision is intentional.
+                </p>
+                <p>When I'm not pushing pixels, you'll find me exploring design systems, reading about cognitive
+                  psychology, or obsessing over the latest Apple HIG updates.</p>
+              </div>
+            </div>
+
+            <div class="about-section">
+              <div class="section-label">Skills</div>
+              <div class="skills-grid">
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #FF6B6B, #FF8E53); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(255,107,107,0.3);">
+                    <i data-lucide="palette" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">Figma</div>
+                    <div class="skill-level">Expert</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #D4145A, #FBB03B); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(212,20,90,0.3);">
+                    <i data-lucide="pen-tool" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">Adobe XD</div>
+                    <div class="skill-level">Expert</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #00C9FF, #92FE9D); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,201,255,0.3);">
+                    <i data-lucide="layout-template" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">UI Design</div>
+                    <div class="skill-level">Expert</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #FAD961, #F76B1C); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(250,217,97,0.3);">
+                    <i data-lucide="search" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">UX Research</div>
+                    <div class="skill-level">Advanced</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #667EEA, #764BA2); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(102,126,234,0.3);">
+                    <i data-lucide="globe" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">Webflow</div>
+                    <div class="skill-level">Proficient</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #B224EF, #7579FF); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(178,36,239,0.3);">
+                    <i data-lucide="zap" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">Prototyping</div>
+                    <div class="skill-level">Advanced</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #FFB199, #FF0844); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(255,177,153,0.3);">
+                    <i data-lucide="copy" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">Design Sys.</div>
+                    <div class="skill-level">Expert</div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon"
+                    style="background:linear-gradient(135deg, #16A085, #F4D03F); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(22,160,133,0.3);">
+                    <i data-lucide="bar-chart-2" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div class="skill-text">
+                    <div class="skill-name">Analytics</div>
+                    <div class="skill-level">Intermediate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-section" style="margin-bottom:30px">
+              <div class="section-label">Experience</div>
+              <div class="exp-card">
+                <div class="exp-dot" style="background:#5B6EF5;color:#5B6EF5"></div>
+                <div>
+                  <div class="exp-co">Designify Studio</div>
+                  <div class="exp-role">Lead UI/UX Designer</div>
+                  <div class="exp-years">2022 – Present · 2 yrs 4 mo</div>
+                </div>
+              </div>
+              <div class="exp-card">
+                <div class="exp-dot" style="background:#a78bfa;color:#a78bfa"></div>
+                <div>
+                  <div class="exp-co">NovaTech Solutions</div>
+                  <div class="exp-role">Senior Product Designer</div>
+                  <div class="exp-years">2020 – 2022 · 2 yrs</div>
+                </div>
+              </div>
+              <div class="exp-card">
+                <div class="exp-dot" style="background:#34d399;color:#34d399"></div>
+                <div>
+                  <div class="exp-co">PixelCraft Agency</div>
+                  <div class="exp-role">UI Designer</div>
+                  <div class="exp-years">2019 – 2020 · 1 yr</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORK -->
+        <div class="tab-slide" id="tab-work">
+          <div class="work-header">
+            <div>
+              <div class="work-title">Selected <span>Work</span></div>
+              <div class="work-count">6 case studies</div>
+            </div>
+          </div>
+          <div style="padding:0 4px 8px">
+
+            <div class="project-card" onclick="window.location.href='case-study.html'">
+              <div class="project-img">
+                <img
+                  src="https://cdn.dribbble.com/userupload/14588925/file/original-6337e51a8b031684ed85b4f10046ca0c.png?resize=1504x1128&vertical=center"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="project-tag" style="background:rgba(91,110,245,0.12);color:#4f46e5">Mobile App</span>
+                  <span class="project-tag" style="background:rgba(167,139,250,0.12);color:#7c3aed">FinTech</span>
+                </div>
+                <div class="project-name">Velo — Banking App</div>
+                <div class="project-desc">A next-generation mobile banking experience with zero-friction onboarding,
+                  AI-powered insights, and a design language inspired by physical currency.</div>
+                <div class="project-footer">
+                  <div style="font-size:11px;color:var(--text-muted)">Figma · Protopie · iOS</div>
+                  <div class="project-arrow">→</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" onclick="window.location.href='case-study.html'">
+              <div class="project-img">
+                <img
+                  src="https://cdn.dribbble.com/userupload/47219220/file/c3b149dc221eea0bbf50578669a009c2.png?resize=1504x1128&vertical=center"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="project-tag" style="background:rgba(244,114,182,0.12);color:#db2777">Web App</span>
+                  <span class="project-tag" style="background:rgba(239,68,68,0.12);color:#dc2626">Music</span>
+                </div>
+                <div class="project-name">Resonance — Music Platform</div>
+                <div class="project-desc">Reimagining music discovery through mood-based algorithms. Built a complete
+                  design system with 200+ components and a dark-first aesthetic.</div>
+                <div class="project-footer">
+                  <div style="font-size:11px;color:var(--text-muted)">Figma · Design System</div>
+                  <div class="project-arrow">→</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" onclick="window.location.href='case-study.html'">
+              <div class="project-img">
+                <img
+                  src="https://cdn.dribbble.com/userupload/46767493/file/adf244db05914c6b86f3a0c23d13a0e4.png?crop=0x0-1600x1200&format=webp&resize=400x300&vertical=center"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="project-tag" style="background:rgba(96,165,250,0.12);color:#2563eb">HealthTech</span>
+                  <span class="project-tag" style="background:rgba(52,211,153,0.12);color:#059669">Dashboard</span>
+                </div>
+                <div class="project-name">MediCore — Health Dashboard</div>
+                <div class="project-desc">A clinical management platform for doctors and nurses. Reduced task completion
+                  time by 40% through strategic information architecture redesign.</div>
+                <div class="project-footer">
+                  <div style="font-size:11px;color:var(--text-muted)">Figma · User Research · A/B</div>
+                  <div class="project-arrow">→</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" onclick="window.location.href='case-study.html'">
+              <div class="project-img">
+                <img
+                  src="https://cdn.dribbble.com/userupload/45488501/file/833475fea980411c5ff14fad2170608c.png?format=webp&resize=400x300&vertical=center"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="project-tag" style="background:rgba(52,211,153,0.12);color:#059669">E-Commerce</span>
+                  <span class="project-tag" style="background:rgba(251,191,36,0.12);color:#d97706">Checkout</span>
+                </div>
+                <div class="project-name">Luxe — Luxury E-Commerce</div>
+                <div class="project-desc">A premium shopping experience for luxury goods. Increased conversion by 62%
+                  via a redesigned checkout flow and editorial product pages.</div>
+                <div class="project-footer">
+                  <div style="font-size:11px;color:var(--text-muted)">XD · Webflow · Analytics</div>
+                  <div class="project-arrow">→</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" onclick="window.location.href='case-study.html'">
+              <div class="project-img">
+                <img
+                  src="https://cdn.dribbble.com/userupload/45883269/file/e41ff78e06ee0834dbee483865bef5eb.png?crop=0x0-4800x3600&format=webp&resize=400x300&vertical=center"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="project-tag" style="background:rgba(244,114,182,0.12);color:#db2777">Food</span>
+                  <span class="project-tag" style="background:rgba(251,191,36,0.12);color:#d97706">Mobile</span>
+                </div>
+                <div class="project-name">Bite — Food Delivery App</div>
+                <div class="project-desc">Hyper-local food delivery with real-time tracking, social food sharing, and a
+                  gamified loyalty system that boosted DAU by 3x.</div>
+                <div class="project-footer">
+                  <div style="font-size:11px;color:var(--text-muted)">Figma · Motion · Android/iOS</div>
+                  <div class="project-arrow">→</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" style="margin-bottom:8px">
+              <div class="project-img">
+                <img
+                  src="https://cdn.dribbble.com/userupload/11780960/file/original-b5723a4f9fc7c5fd7fb8b94ddc065b35.png?format=webp&resize=400x300&vertical=center"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="project-tag" style="background:rgba(167,139,250,0.12);color:#7c3aed">EdTech</span>
+                  <span class="project-tag" style="background:rgba(96,165,250,0.12);color:#2563eb">SaaS</span>
+                </div>
+                <div class="project-name">Scholar — Learning Platform</div>
+                <div class="project-desc">An adaptive learning platform with personalized study paths and a gamified
+                  progress system. Winner of the 2023 Awwwards Student Award.</div>
+                <div class="project-footer">
+                  <div style="font-size:11px;color:var(--text-muted)">Figma · Framer · Research</div>
+                  <div class="project-arrow">→</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="tab-slide" id="tab-contact">
+          <div class="contact-header">
+            <div class="contact-title">Let's <span>Connect</span></div>
+            <div class="contact-sub">Have a project in mind? I'd love to hear about it. Let's create something
+              extraordinary together.</div>
+          </div>
+          <div style="padding:0 4px">
+            <div class="contact-links" style="margin-bottom:16px">
+              <div class="contact-link-card">
+                <div class="link-icon"
+                  style="background:linear-gradient(135deg, #5B6EF5, #7c3aed); color: white; box-shadow: 0 4px 16px rgba(91,110,245,0.3); border-radius: 16px;">
+                  <i data-lucide="mail"></i>
+                </div>
+
+
+              </div>
+              <div class="contact-link-card">
+                <div class="link-icon"
+                  style="background:linear-gradient(135deg, #34d399, #059669); color: white; box-shadow: 0 4px 16px rgba(52,211,153,0.3); border-radius: 16px;">
+                  <i data-lucide="briefcase"></i>
+                </div>
+
+
+              </div>
+              <div class="contact-link-card">
+                <div class="link-icon"
+                  style="background:linear-gradient(135deg, #f472b6, #db2777); color: white; box-shadow: 0 4px 16px rgba(244,114,182,0.3); border-radius: 16px;">
+                  <i data-lucide="dribbble"></i>
+                </div>
+
+
+              </div>
+              <div class="contact-link-card">
+                <div class="link-icon"
+                  style="background:linear-gradient(135deg, #fbbf24, #d97706); color: white; box-shadow: 0 4px 16px rgba(251,191,36,0.3); border-radius: 16px;">
+                  <i data-lucide="figma"></i>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="form-card" style="margin-bottom:30px">
+              <div
+                style="font-size:15px;font-weight:600;color:var(--text-primary);margin-bottom:16px;letter-spacing:-0.3px">
+                Send a message</div>
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" placeholder="e.g. Alex Johnson">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" placeholder="alex@company.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Project Type</label>
+                <input type="text" class="form-input" placeholder="e.g. Mobile App Design">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-input"
+                  placeholder="Tell me about your project, timeline, and budget..."></textarea>
+              </div>
+              <button class="submit-btn" onclick="handleSubmit(this)">Send Message ✦</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /wrapper -->
+    </div><!-- /container -->
+
+    <!-- Bottom Nav -->
+    <nav id="bottom-nav">
+      <div class="nav-glass">
+        <div class="nav-item active" data-tab="0" onclick="switchTab(0)">
+          <div class="nav-icon-wrap" style="background:linear-gradient(135deg,#5B6EF5,#7c3aed)">
+            <i data-lucide="command" style="width: 20px; height: 20px; color: white;"></i>
+          </div>
+          <div class="nav-label">Home</div>
+        </div>
+        <div class="nav-item" data-tab="1" onclick="switchTab(1)">
+          <div class="nav-icon-wrap" style="background:linear-gradient(135deg,#f472b6,#a78bfa)">
+            <i data-lucide="user" style="width: 20px; height: 20px; color: white;"></i>
+          </div>
+          <div class="nav-label">About</div>
+        </div>
+        <div class="nav-item" data-tab="2" onclick="switchTab(2)">
+          <div class="nav-icon-wrap" style="background:linear-gradient(135deg,#34d399,#60a5fa)">
+            <i data-lucide="grid" style="width: 20px; height: 20px; color: white;"></i>
+          </div>
+          <div class="nav-label">Work</div>
+        </div>
+        <div class="nav-item" data-tab="3" onclick="switchTab(3)">
+          <div class="nav-icon-wrap" style="background:linear-gradient(135deg,#fb923c,#f472b6)">
+            <i data-lucide="message-square" style="width: 20px; height: 20px; color: white;"></i>
+          </div>
+          <div class="nav-label">Contact</div>
+        </div>
+      </div>
+    </nav>
+
+  </div><!-- /app -->
+
+  <script>
+    let currentTab = 0;
+    const totalTabs = 4;
+
+    // ── Splash dismiss ──
+    window.addEventListener('DOMContentLoaded', () => {
+      const splash = document.getElementById('splash');
+      const app = document.getElementById('app');
+
+      setTimeout(() => {
+        splash.classList.add('splash-exit');
+        app.classList.add('visible');
+        setTimeout(() => {
+          splash.style.display = 'none';
+          animateHomeEntrance();
+        }, 800);
+      }, 1800);
+    });
+
+    // ── Home entrance ──
+    function animateHomeEntrance() {
+      if (typeof gsap === 'undefined') return;
+      const tl = gsap.timeline();
+      tl.from('.hero-avatar', { y: 30, opacity: 0, scale: 0.8, duration: 0.6, ease: 'back.out(1.7)' })
+        .from('.hero-badge', { y: 20, opacity: 0, duration: 0.4, ease: 'power2.out' }, '-=0.2')
+        .from('.hero-name', { y: 30, opacity: 0, duration: 0.5, ease: 'power3.out' }, '-=0.2')
+        .from('.hero-title', { y: 20, opacity: 0, duration: 0.4, ease: 'power2.out' }, '-=0.3')
+        .from('.hero-tagline', { y: 20, opacity: 0, duration: 0.4, ease: 'power2.out' }, '-=0.2')
+        .from('.stat-card', { y: 24, opacity: 0, duration: 0.4, stagger: 0.08, ease: 'power2.out' }, '-=0.1')
+        .from('.cta-card', { y: 20, opacity: 0, scale: 0.95, duration: 0.4, ease: 'back.out(1.5)' }, '-=0.1');
+    }
+
+    // ── Tab switching ──
+    function switchTab(idx) {
+      if (idx === currentTab) return;
+      currentTab = idx;
+      const wrapper = document.getElementById('swiperWrapper');
+      wrapper.style.transform = `translateX(-${idx * 100}%)`;
+
+      document.querySelectorAll('.nav-item').forEach((item, i) => {
+        item.classList.toggle('active', i === idx);
+      });
+
+      // Animate tab content in
+      const slides = document.querySelectorAll('.tab-slide');
+      if (typeof gsap !== 'undefined') {
+        const children = slides[idx].querySelectorAll('.glass,.bio-card,.skill-chip,.exp-card,.project-card,.contact-link-card,.form-card,.stat-card,.cta-card,.about-hero,.work-header,.contact-header');
+        gsap.fromTo(children,
+          { opacity: 0, y: 22 },
+          { opacity: 1, y: 0, duration: 0.45, stagger: 0.045, ease: 'power2.out', clearProps: 'all' }
+        );
+      }
+    }
+
+    // ── Touch swipe ──
+    let touchStartX = 0, touchStartY = 0, isSwiping = false;
+    const container = document.getElementById('swiperContainer');
+
+    container.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      isSwiping = false;
+    }, { passive: true });
+
+    container.addEventListener('touchmove', e => {
+      const dx = e.touches[0].clientX - touchStartX;
+      const dy = e.touches[0].clientY - touchStartY;
+      if (!isSwiping && Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+        isSwiping = true;
+      }
+    }, { passive: true });
+
+    container.addEventListener('touchend', e => {
+      if (!isSwiping) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0 && currentTab < totalTabs - 1) switchTab(currentTab + 1);
+        else if (dx > 0 && currentTab > 0) switchTab(currentTab - 1);
+      }
+      isSwiping = false;
+    }, { passive: true });
+
+    // ── Contact submit ──
+    function handleSubmit(btn) {
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = 'linear-gradient(135deg,#34d399,#10b981)';
+      btn.style.boxShadow = '0 8px 24px rgba(52,211,153,0.4)';
+      setTimeout(() => {
+        btn.textContent = 'Send Message ✦';
+        btn.style.background = '';
+        btn.style.boxShadow = '';
+      }, 3000);
+    }
+
+    // ── Project card ripple ──
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', function () {
+        this.style.transform = 'scale(0.97)';
+        setTimeout(() => { this.style.transform = ''; }, 180);
+      });
+    });
+
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
